@@ -14,4 +14,4 @@ if [ "$1" = 'bash' ]; then
 fi
 
 # This line keeps the container alive
-tail -f /var/log/dmesg
+exec tail -f /var/log/dmesg
