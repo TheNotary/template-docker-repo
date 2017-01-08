@@ -15,4 +15,9 @@ console:
   -e an_env_var=${HIDDEN_ENV} \
   ${USER}/${DOCKER_IMAGE_NAME} bash
 
+clean:
+	docker stop ${DOCKER_IMAGE_NAME}; \
+  docker rm ${DOCKER_IMAGE_NAME}; \
+  docker rmi ${USER}/${DOCKER_IMAGE_NAME};
+
 .PHONY: build
