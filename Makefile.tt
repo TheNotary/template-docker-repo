@@ -20,4 +20,4 @@ clean:
   docker rm ${DOCKER_IMAGE_NAME}; \
   docker rmi ${USER}/${DOCKER_IMAGE_NAME};
 
-.PHONY: build
+.PHONY: run console
